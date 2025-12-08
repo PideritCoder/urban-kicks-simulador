@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Urban Kicks - Simulador de Tienda de Zapatillas</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-dark text-light">
+  <header class="py-4 border-bottom border-secondary mb-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+      <div>
+        <h1 class="display-5 fw-bold text-accent mb-0">Urban Kicks</h1>
+        <p class="lead mb-0 text-muted">
+          Simulador interactivo de cotización de zapatillas (sneakers).
+        </p>
+      </div>
+      <button id="btnIniciar" class="btn btn-accent btn-lg shadow-sm">
+        Iniciar simulador en consola
+      </button>
+    </div>
+  </header>
+
+  <main class="container pb-5">
+    <section class="row g-4 mb-5">
+      <div class="col-lg-7">
+        <div class="card bg-gradient-dark shadow-lg h-100">
+          <div class="card-body">
+            <h2 class="h4 text-accent mb-3">¿De qué se trata este simulador?</h2>
+            <p class="mb-3">
+              Este proyecto corresponde a la <strong>Entrega 1</strong> del curso de Desarrollo Front‑End.
+              Es un simulador de una tienda de zapatillas llamada
+              <strong>Urban Kicks</strong>, donde puedes
+              <strong>cotizar el precio final</strong> de distintos modelos
+              de sneakers.
+            </p>
+            <p class="mb-3">
+              El simulador calcula:
+            </p>
+            <ul>
+              <li>Precio base de la zapatilla.</li>
+              <li>Impuesto IVA aplicado al producto.</li>
+              <li>Costos de envío o envío gratis según el total.</li>
+            </ul>
+            <p class="mb-0">
+              La interacción principal se realiza mediante
+              <strong>Prompt, Alert, Confirm y la Consola de JS</strong>,
+              cumpliendo con los requisitos de la consigna.
+              Usa el botón <strong>"Iniciar simulador en consola"</strong> para comenzar.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="card bg-gradient-dark shadow-lg h-100">
+          <div class="card-body">
+            <h2 class="h5 text-accent mb-3">Modelos disponibles</h2>
+            <p class="text-muted mb-3">
+              Estos son algunos de los modelos que el simulador utiliza internamente.
+              Se cargan desde un <strong>array de objetos</strong> en JavaScript.
+            </p>
+            <div class="row g-3" id="gridZapatillas">
+              <!-- Se rellena dinámicamente desde JS con los mismos datos del simulador -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card bg-gradient-dark shadow-lg">
+      <div class="card-body">
+        <h2 class="h5 text-accent mb-3">Instrucciones para probar el simulador</h2>
+        <ol class="mb-3">
+          <li>Abre este archivo en tu navegador (por ejemplo, Chrome).</li>
+          <li>Presiona <code>F12</code> para abrir las herramientas de desarrollo y ve a la pestaña <strong>Consola</strong>.</li>
+          <li>Haz clic en el botón <strong>"Iniciar simulador en consola"</strong>.</li>
+          <li>Sigue las instrucciones que aparecen en los cuadros <strong>prompt</strong>, <strong>alert</strong> y <strong>confirm</strong>.</li>
+        </ol>
+        <p class="text-muted mb-0">
+          En la consola podrás ver registros detallados de cada cotización, lo que facilita
+          la depuración y el análisis del flujo del simulador.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS (opcional para este simulador, pero útil para el diseño) -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Archivo de lógica principal -->
+  <script src="js/main.js"></script>
+</body>
+</html>
