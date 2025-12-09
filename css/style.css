@@ -1,59 +1,61 @@
-/* Urban Kicks - Estilos profesionales para la Entrega 1 */
+/* ================================
+   🔥 MEJORA DE CONTRASTE DE TEXTO
+   ================================ */
 
-/* Fuente base */
-body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+/* Texto general del sitio */
+body, p, h1, h2, h3, h4, h5, h6, span, li {
+  color: #ffffff !important;
 }
 
-/* Gradiente suave para tarjetas oscuras */
+/* Tarjetas oscuras */
+.card-sneaker,
 .bg-gradient-dark {
-  background: radial-gradient(circle at top left, #30363d 0, #151b23 40%, #050608 100%);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 1rem;
+  color: #ffffff !important;
 }
 
+/* Subtítulos o textos secundarios */
+.text-muted {
+  color: #d3d3d3 !important;
+}
+
+/* Ajuste de contraste para títulos destacados */
 .text-accent {
-  color: #0d6efd;
+  color: #4da3ff !important; /* más brillante */
 }
 
+/* Botones */
 .btn-accent {
-  background: linear-gradient(135deg, #0d6efd, #6610f2);
-  border: none;
+  color: #ffffff !important;
 }
 
-.btn-accent:hover {
-  background: linear-gradient(135deg, #0b5ed7, #520dc2);
+/* === Corrección de contraste general === */
+
+/* Fondo global oscuro y texto claro */
+body {
+  background: radial-gradient(circle at top left, #111827 0, #020617 45%, #000 100%);
+  color: #f9fafb;
 }
 
-.card-sneaker {
-  border-radius: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(15, 23, 42, 0.9);
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+/* Tarjetas y paneles con fondo oscuro */
+.card,
+.card-body,
+.bg-white,
+.bg-light {
+  background-color: rgba(15, 23, 42, 0.96) !important;
+  color: #f9fafb !important;
 }
 
-.card-sneaker:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  border-color: rgba(13, 110, 253, 0.7);
+/* Por si tus paneles tienen clases personalizadas */
+.section-panel,
+.simulator-panel {
+  background-color: rgba(15, 23, 42, 0.96);
+  color: #f9fafb;
 }
 
-.badge-price {
-  background: rgba(25, 135, 84, 0.12);
-  color: #75b798;
-  border-radius: 999px;
-  padding: 0.1rem 0.6rem;
-  font-size: 0.75rem;
-}
-
-.badge-iva {
-  background: rgba(255, 193, 7, 0.12);
-  color: #ffda6a;
-  border-radius: 999px;
-  padding: 0.1rem 0.6rem;
-  font-size: 0.75rem;
-}
-
-#btnIniciar {
-  min-width: 260px;
+/* Texto base más claro y legible */
+p,
+li,
+small,
+.text-muted {
+  color: #e5e7eb !important;
 }
